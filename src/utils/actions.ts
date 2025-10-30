@@ -68,7 +68,6 @@ export const handleDeleteUserAction = async (id: any) => {
       Authorization: `Bearer ${session?.user?.access_token}`,
     },
   });
-
   revalidateTag("list-users");
   return res;
 };
